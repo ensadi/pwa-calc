@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PWA-Calc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="w3.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icon192.png">
+<link rel="apple-touch-startup-image" href="/icon192.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="app_v$VERSION.js"></script>
+</head>
+<body>
+<div id="calc"></div>
+<script>
+	var app = Elm.Main.init({
+		node: document.getElementById('calc')
+
+	});
+</script>
+<br>
+<footer class="fixed-bottom">
+<div class='w3-small w3-opacity w3-center'>
+	Copyright &copy; 2020 <a class='w3-opacity' title='https://ensadi.com' href='https://ensadi.com/home' target='_blank'>Ensadi LLC</a>
+</div>
+</footer>
+<script>
+// make sure that the browser supports Service Workers and register if so.
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/calcsw.js').then( function(reg) { 
+		// registration successful
+		console.log('Registration successful.');
+		console.log('Scope: ', reg.scope);
+	}).catch(function(error) {
+		// failed
+		console.log('Registration failed: ', error);
+	});
+}
+</script>
+</body>
+</html>
+
