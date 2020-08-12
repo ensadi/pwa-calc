@@ -13,5 +13,9 @@ release: all
 
 bump:
 	echo $$(( $$(cat VERSION) + 1  )) > VERSION
+
+deploy: release
+	./deploy
+
 clean:
 	rm -rf elm-stuff app_v*.js test.html calcsw.js index.html
