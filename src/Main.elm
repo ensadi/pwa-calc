@@ -228,7 +228,7 @@ view model =
             [ div [ class "w3-col", style "width" "25%" ]
                 [ button [ onClick Clear, class "w3-block w3-green w3-ripple button", style "font-size" "40px" ] [ text "C" ] ]
             , div [ class "w3-col", style "width" "25%" ]
-                [ button [ onClick Negative, class "w3-block w3-green w3-ripple button", style "font-size" "40px" ] [ text "+/-" ] ]
+                [ button [ onClick Negative, class "w3-block w3-green w3-ripple button", style "font-size" "40px" ] [ text (String.fromChar (Char.fromCode 177)) ] ]
             , div [ class "w3-col", style "width" "25%" ]
                 [ button [ onClick Percent, class "w3-block w3-green w3-ripple button", style "font-size" "40px" ] [ text "%" ] ]
             , div [ class "w3-col", style "width" "25%" ]
