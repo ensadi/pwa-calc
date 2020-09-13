@@ -2,7 +2,7 @@
 
 const cacheName    = 'pwacalc_v3'; // name of cache to use.
 const oldCacheName = 'pwacalc_v2'; // name of cache from previous version of app. used to remove old cache.
-const offlinePage  = './offline.html'; // page to load to show an offline status.
+const offlinePage  = 'offline.html'; // page to load to show an offline status.
 const appjs        = 'app_v$VERSION.js'; // the application
 
 // attach listener to 'beforeinstallprompt' event
@@ -24,7 +24,7 @@ self.addEventListener('install', function(event) {
 	event.waitUntil(self.skipWaiting()); // trigger activate event to start immediately instead of waiting for a page reload
 	event.waitUntil(
 		caches.open(cacheName).then(
-			cache => cache.addAll([ '/', '/index.html', '/w3.css', appjs, offlinePage ])
+			cache => cache.addAll([ '/', 'index.html', 'w3.css', appjs, offlinePage ])
 		)
 	);
 });
