@@ -1,6 +1,6 @@
 // PWABoilerplate service worker file
 
-const cacheName    = 'pwacalc_v3'; // name of cache to use.
+const cacheName    = 'pwacalc_v$VERSION'; // name of cache to use.
 const oldCacheName = 'pwacalc_v2'; // name of cache from previous version of app. used to remove old cache.
 const offlinePage  = 'offline.html'; // page to load to show an offline status.
 const appjs        = 'app_v$VERSION.js'; // the application

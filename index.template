@@ -3,7 +3,7 @@
 <head>
 <title>PWA-Calc</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="stylesheet" href="w3.css">
@@ -24,7 +24,7 @@
 <br>
 <footer class="fixed-bottom">
 <div class='w3-small w3-opacity w3-center'>
-	Copyright &copy; 2020 <a class='w3-opacity' title='https://ensadi.com' href='https://ensadi.com/home' target='_blank'>Ensadi LLC</a>
+	v$VERSION; Copyright &copy; 2020 <a class='w3-opacity' title='https://ensadi.com' href='https://ensadi.com/home' target='_blank'>Ensadi LLC</a>
 </div>
 </footer>
 <script>
